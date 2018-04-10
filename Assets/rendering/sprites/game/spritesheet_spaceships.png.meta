@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: b440d1c07d3304db7a8f51e427209c4c
+timeCreated: 1436719430
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: saucer_yellow_full
+    21300002: saucer_yellow_damage3
+    21300004: saucer_yellow_damage2
+    21300006: saucer_yellow_damage1
+    21300008: saucer_pink_full
+    21300010: saucer_pink_damage2
+    21300012: saucer_pink_damage3
+    21300014: saucer_pink_damage1
+    21300016: saucer_green_full
+    21300018: saucer_green_damage3
+    21300020: saucer_green_damage2
+    21300022: saucer_green_damage1
+    21300024: saucer_blue_fall
+    21300026: saucer_blue_damage3
+    21300028: saucer_blue_damage2
+    21300030: saucer_blue_damage1
+    21300032: saucer_tan_damage3
+    21300034: saucer_tan_full
+    21300036: saucer_tan_daamage2
+    21300038: saucer_tan_damage1
+    21300040: saucer_bubble
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: saucer_yellow_full
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 124
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_yellow_damage3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 342
+        width: 124
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_yellow_damage2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 280
+        width: 124
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_yellow_damage1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 218
+        width: 124
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_pink_full
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 91
+        width: 124
+        height: 127
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_pink_damage2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 124
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_pink_damage3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 440
+        width: 124
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_pink_damage1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 368
+        width: 124
+        height: 72
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_green_full
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 245
+        width: 124
+        height: 123
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_green_damage3
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 177
+        width: 124
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_green_damage2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 109
+        width: 124
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_green_damage1
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 41
+        width: 124
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_blue_fall
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 367
+        width: 124
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_blue_damage3
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 278
+        width: 124
+        height: 89
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_blue_damage2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 188
+        width: 124
+        height: 90
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_blue_damage1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 97
+        width: 124
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_tan_damage3
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 29
+        width: 124
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_tan_full
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 390
+        width: 124
+        height: 122
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_tan_daamage2
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 323
+        width: 124
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_tan_damage1
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 256
+        width: 124
+        height: 67
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: saucer_bubble
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 158
+        width: 83
+        height: 98
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: game
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

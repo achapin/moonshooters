@@ -1,0 +1,535 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &181400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400854}
+  - component: {fileID: 11461768}
+  m_Layer: 0
+  m_Name: EnemyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400854
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181400}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11461768
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e876314698dd64d84af7b0c858439125, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availableEnemies:
+  - image: {fileID: 21300128, guid: d918407344b2c423f992980835908b34, type: 3}
+    useCircleCollider: 0
+    colliderSize: 0.4
+    hp: 2
+    weapon:
+      weapons:
+      - bulletToFire: 0
+        timeToFire: 0.5
+        positionOffset: {x: -0.2, y: -0.4, z: 0}
+        direction: {x: -1, y: -3}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 0.5
+        positionOffset: {x: 0.2, y: -0.4, z: 0}
+        direction: {x: 1, y: -3}
+        playOnFire: 
+    pointsGiven: 300
+    playOnExplode: explosion_small
+  - image: {fileID: 21300136, guid: d918407344b2c423f992980835908b34, type: 3}
+    useCircleCollider: 0
+    colliderSize: 0.45
+    hp: 1
+    weapon:
+      weapons:
+      - bulletToFire: 0
+        timeToFire: 0.5
+        positionOffset: {x: 0, y: -0.5, z: 0}
+        direction: {x: 0, y: -1}
+        playOnFire: 
+    pointsGiven: 200
+    playOnExplode: explosion_small
+  - image: {fileID: 21300144, guid: d918407344b2c423f992980835908b34, type: 3}
+    useCircleCollider: 0
+    colliderSize: 0.7
+    hp: 1
+    weapon:
+      weapons:
+      - bulletToFire: 0
+        timeToFire: 0.75
+        positionOffset: {x: 0, y: -0.5, z: 0}
+        direction: {x: 0, y: -1}
+        playOnFire: 
+    pointsGiven: 100
+    playOnExplode: explosion_small
+  - image: {fileID: 21300158, guid: d918407344b2c423f992980835908b34, type: 3}
+    useCircleCollider: 0
+    colliderSize: 0.8
+    hp: 3
+    weapon:
+      weapons:
+      - bulletToFire: 0
+        timeToFire: 1
+        positionOffset: {x: 0, y: -0.5, z: 0}
+        direction: {x: 0, y: -1}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 1.1
+        positionOffset: {x: -0.3, y: -0.4, z: 0}
+        direction: {x: 0, y: -1}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 1.1
+        positionOffset: {x: 0.3, y: -0.4, z: 0}
+        direction: {x: 0, y: -1}
+        playOnFire: 
+    pointsGiven: 500
+    playOnExplode: explosion_small
+  - image: {fileID: 21300164, guid: d918407344b2c423f992980835908b34, type: 3}
+    useCircleCollider: 0
+    colliderSize: 0.85
+    hp: 1
+    weapon:
+      weapons:
+      - bulletToFire: 0
+        timeToFire: 0.5
+        positionOffset: {x: 0, y: -0.5, z: 0}
+        direction: {x: 0, y: -1}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 1
+        positionOffset: {x: -0.2, y: -0.4, z: 0}
+        direction: {x: -1, y: -4}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 1
+        positionOffset: {x: 0.2, y: -0.4, z: 0}
+        direction: {x: 1, y: -4}
+        playOnFire: 
+    pointsGiven: 300
+    playOnExplode: explosion_small
+  - image: {fileID: 21300000, guid: b440d1c07d3304db7a8f51e427209c4c, type: 3}
+    useCircleCollider: 1
+    colliderSize: 0.62
+    hp: 35
+    weapon:
+      weapons:
+      - bulletToFire: 0
+        timeToFire: 0.5
+        positionOffset: {x: 0, y: -0.3, z: 0}
+        direction: {x: 0, y: -1}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 1
+        positionOffset: {x: -0.2, y: -0.4, z: 0}
+        direction: {x: -1, y: -4}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 1
+        positionOffset: {x: 0.2, y: -0.4, z: 0}
+        direction: {x: 1, y: -4}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 1.5
+        positionOffset: {x: 0.2, y: -0.4, z: 0}
+        direction: {x: 1, y: -2}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 1.5
+        positionOffset: {x: -0.2, y: -0.4, z: 0}
+        direction: {x: -1, y: -2}
+        playOnFire: 
+    pointsGiven: 5000
+    playOnExplode: explosion_large
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[2].weapon.weapons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].weapon.weapons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[1].weapon.weapons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].image
+      value: 
+      objectReference: {fileID: 21300128, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].useSphereCollider
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].colliderSize
+      value: .400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].hp
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[1].image
+      value: 
+      objectReference: {fileID: 21300136, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[1].useSphereCollider
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[1].colliderSize
+      value: .449999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[1].hp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[2].image
+      value: 
+      objectReference: {fileID: 21300144, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[2].hp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[2].colliderSize
+      value: .699999988
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].hp
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].image
+      value: 
+      objectReference: {fileID: 21300158, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].image
+      value: 
+      objectReference: {fileID: 21300164, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].colliderSize
+      value: .850000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].colliderSize
+      value: .800000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].hp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[2].weapon.weapons.Array.data[0].timeToFire
+      value: .75
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[2].weapon.weapons.Array.data[0].positionOffset.y
+      value: -.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[2].weapon.weapons.Array.data[0].direction.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[1].pointsGiven
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[2].pointsGiven
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].pointsGiven
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].pointsGiven
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].pointsGiven
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[0].timeToFire
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[0].positionOffset.y
+      value: -.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[0].direction.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[1].timeToFire
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[1].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[1].positionOffset.y
+      value: -.400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[1].direction.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[1].direction.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[2].timeToFire
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[2].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[2].positionOffset.y
+      value: -.400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[2].direction.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].weapon.weapons.Array.data[2].direction.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].weapon.weapons.Array.data[0].timeToFire
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].weapon.weapons.Array.data[0].positionOffset.y
+      value: -.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].weapon.weapons.Array.data[0].direction.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].weapon.weapons.Array.data[1].timeToFire
+      value: 1.10000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].weapon.weapons.Array.data[1].positionOffset.x
+      value: -.300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].weapon.weapons.Array.data[1].positionOffset.y
+      value: -.400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].weapon.weapons.Array.data[2].timeToFire
+      value: 1.10000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].weapon.weapons.Array.data[2].positionOffset.x
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].weapon.weapons.Array.data[2].positionOffset.y
+      value: -.400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[1].weapon.weapons.Array.data[0].timeToFire
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[1].weapon.weapons.Array.data[0].positionOffset.y
+      value: -.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[1].weapon.weapons.Array.data[0].direction.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.data[0].timeToFire
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.data[0].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.data[0].positionOffset.y
+      value: -.400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.data[0].direction.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.data[0].direction.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.data[1].timeToFire
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.data[1].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.data[1].positionOffset.y
+      value: -.400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.data[1].direction.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].weapon.weapons.Array.data[1].direction.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].image
+      value: 
+      objectReference: {fileID: 21300000, guid: b440d1c07d3304db7a8f51e427209c4c,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].useCircleCollider
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].colliderSize
+      value: .620000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].hp
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].pointsGiven
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.data[2].positionOffset.y
+      value: -.400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.data[0].positionOffset.y
+      value: -.300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.data[3].timeToFire
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.data[3].positionOffset.y
+      value: -.400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.data[3].direction.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.data[4].timeToFire
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.data[4].direction.y
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.data[4].positionOffset.y
+      value: -.400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.data[4].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].weapon.weapons.Array.data[4].direction.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[5].playOnExplode
+      value: explosion_large
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[4].playOnExplode
+      value: explosion_small
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[3].playOnExplode
+      value: explosion_small
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[2].playOnExplode
+      value: explosion_small
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[1].playOnExplode
+      value: explosion_small
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableEnemies.Array.data[0].playOnExplode
+      value: explosion_small
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 181400}
+  m_IsPrefabParent: 1

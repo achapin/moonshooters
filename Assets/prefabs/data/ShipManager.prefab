@@ -1,0 +1,1610 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &136690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 499058}
+  - component: {fileID: 11446308}
+  m_Layer: 0
+  m_Name: ShipManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499058
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136690}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11446308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 136690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8e1d321b625435f9ab00f36faf3b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availableShips:
+  - shipSprite: {fileID: 21300034, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Broadsword
+    health: 6
+    maxSpeed: 8
+    accel: 40
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.5
+        positionOffset: {x: 0, y: 0.5, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.35
+        positionOffset: {x: -0.2, y: 0.3, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 0.35
+        positionOffset: {x: 0.2, y: 0.3, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: 
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.35
+        positionOffset: {x: -0.2, y: 0.3, z: 0}
+        direction: {x: -1, y: 3}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 0.35
+        positionOffset: {x: 0.2, y: 0.3, z: 0}
+        direction: {x: 1, y: 3}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 0.15
+        positionOffset: {x: 0, y: 0.5, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: 
+    livesSprite: {fileID: 21300104, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300032, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300040, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300042, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explosion_med
+  - shipSprite: {fileID: 21300038, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Morningstar
+    health: 6
+    maxSpeed: 8
+    accel: 35
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.4
+        positionOffset: {x: 0, y: 0.5, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+    livesSprite: {fileID: 21300106, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300032, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300040, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300042, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explode_med
+  - shipSprite: {fileID: 21300044, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Scythe
+    health: 6
+    maxSpeed: 8
+    accel: 60
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.6
+        positionOffset: {x: -0.2, y: 0.2, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+      - bulletToFire: 0
+        timeToFire: 0.6
+        positionOffset: {x: 0.2, y: 0.2, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: 
+    livesSprite: {fileID: 21300110, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300032, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300040, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300042, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explode_med
+  - shipSprite: {fileID: 21300036, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Lance
+    health: 6
+    maxSpeed: 8
+    accel: 35
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.3
+        positionOffset: {x: 0, y: 0.5, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 1
+        positionOffset: {x: -0.2, y: 0.2, z: 0}
+        direction: {x: -1, y: 1}
+        playOnFire: bullet
+      - bulletToFire: 0
+        timeToFire: 1
+        positionOffset: {x: 0.2, y: 0.2, z: 0}
+        direction: {x: 1, y: 1}
+        playOnFire: 
+    livesSprite: {fileID: 21300108, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300032, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300040, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300042, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explosion_med
+  - shipSprite: {fileID: 21300028, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Ranseur
+    health: 8
+    maxSpeed: 5
+    accel: 20
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.3
+        positionOffset: {x: 0.2, y: 0.2, z: 0}
+        direction: {x: 0.25, y: 1}
+        playOnFire: bullet
+      - bulletToFire: 0
+        timeToFire: 0.3
+        positionOffset: {x: -0.2, y: 0.2, z: 0}
+        direction: {x: -0.25, y: 1}
+        playOnFire: 
+    livesSprite: {fileID: 21300064, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300022, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300020, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300018, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explosion_med
+  - shipSprite: {fileID: 21300026, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Rapier
+    health: 8
+    maxSpeed: 5
+    accel: 20
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.15
+        positionOffset: {x: 0, y: 0.5, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+    livesSprite: {fileID: 21300060, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300022, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300020, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300018, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explosion_med
+  - shipSprite: {fileID: 21300030, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Glaive
+    health: 8
+    maxSpeed: 5
+    accel: 40
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.25
+        positionOffset: {x: 0, y: 0.5, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+    livesSprite: {fileID: 21300062, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300022, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300020, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300018, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explode_med
+  - shipSprite: {fileID: 21300024, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Halberd
+    health: 8
+    maxSpeed: 5
+    accel: 30
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.2
+        positionOffset: {x: 0, y: 0.3, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.2
+        positionOffset: {x: 0.2, y: 0.1, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 0.2
+        positionOffset: {x: -0.2, y: 0.1, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: 
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.2
+        positionOffset: {x: 0, y: 0.2, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+      - bulletToFire: 0
+        timeToFire: 0.25
+        positionOffset: {x: 0.2, y: 0.1, z: 0}
+        direction: {x: 1, y: 3}
+        playOnFire: 
+      - bulletToFire: 0
+        timeToFire: 0.25
+        positionOffset: {x: -0.2, y: 0.1, z: 0}
+        direction: {x: -1, y: 3}
+        playOnFire: 
+    livesSprite: {fileID: 21300066, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300022, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300020, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300018, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explosion_med
+  - shipSprite: {fileID: 21300048, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Dirk
+    health: 4
+    maxSpeed: 10
+    accel: 60
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.25
+        positionOffset: {x: 0, y: 0, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+    livesSprite: {fileID: 21300112, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300050, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300052, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300046, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explosion_med
+  - shipSprite: {fileID: 21300056, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Bolt
+    health: 4
+    maxSpeed: 10
+    accel: 60
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.35
+        positionOffset: {x: -0.2, y: 0.2, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+      - bulletToFire: 0
+        timeToFire: 0.35
+        positionOffset: {x: 0.2, y: 0.2, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: 
+    livesSprite: {fileID: 21300116, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300050, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300052, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300046, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explosion_med
+  - shipSprite: {fileID: 21300054, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Arrow
+    health: 4
+    maxSpeed: 12
+    accel: 60
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.3
+        positionOffset: {x: 0, y: 0.5, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+    livesSprite: {fileID: 21300118, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300050, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300052, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300046, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explosion_med
+  - shipSprite: {fileID: 21300058, guid: d918407344b2c423f992980835908b34, type: 3}
+    shipName: Dart
+    health: 4
+    maxSpeed: 10
+    accel: 30
+    weaponProgression:
+    - weapons:
+      - bulletToFire: 0
+        timeToFire: 0.2
+        positionOffset: {x: -0.2, y: 0.2, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: bullet
+      - bulletToFire: 0
+        timeToFire: 0.2
+        positionOffset: {x: 0.2, y: 0.2, z: 0}
+        direction: {x: 0, y: 1}
+        playOnFire: 
+    livesSprite: {fileID: 21300114, guid: d918407344b2c423f992980835908b34, type: 3}
+    damageSprites:
+    - {fileID: 0}
+    - {fileID: 21300050, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300052, guid: d918407344b2c423f992980835908b34, type: 3}
+    - {fileID: 21300046, guid: d918407344b2c423f992980835908b34, type: 3}
+    playOnHurt: hit
+    playOnExplode: explosion_med
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].damageSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].weaponProgression.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].weaponProgression.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].weaponProgression.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].weaponProgression.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].weaponProgression.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[0].weapons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[1].weapons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[0].weapons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[1].weapons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].weaponProgression.Array.data[0].weapons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.data[0].weapons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].weaponProgression.Array.data[0].weapons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].weaponProgression.Array.data[0].weapons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].weaponProgression.Array.data[0].weapons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.data[0].weapons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].weaponProgression.Array.data[0].weapons.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.data[0].weapons.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].shipSprite
+      value: 
+      objectReference: {fileID: 21300058, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].shipSprite
+      value: 
+      objectReference: {fileID: 21300054, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].shipSprite
+      value: 
+      objectReference: {fileID: 21300056, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].shipSprite
+      value: 
+      objectReference: {fileID: 21300048, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].shipSprite
+      value: 
+      objectReference: {fileID: 21300024, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].shipSprite
+      value: 
+      objectReference: {fileID: 21300030, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].shipSprite
+      value: 
+      objectReference: {fileID: 21300026, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].shipSprite
+      value: 
+      objectReference: {fileID: 21300028, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].shipSprite
+      value: 
+      objectReference: {fileID: 21300036, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].shipSprite
+      value: 
+      objectReference: {fileID: 21300044, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].shipSprite
+      value: 
+      objectReference: {fileID: 21300038, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].shipSprite
+      value: 
+      objectReference: {fileID: 21300034, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].shipName
+      value: Broadsword
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].shipName
+      value: Morningstar
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].shipName
+      value: Scythe
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].shipName
+      value: Lance
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].shipName
+      value: Ranseur
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].shipName
+      value: Rapier
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].shipName
+      value: Glaive
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].shipName
+      value: Halberd
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].shipName
+      value: Dirk
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].shipName
+      value: Bolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].shipName
+      value: Arrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].shipName
+      value: Dart
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].maxSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].accel
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].maxSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].accel
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].maxSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].accel
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].maxSpeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].accel
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].maxSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].accel
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].maxSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].accel
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].maxSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].accel
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].maxSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].accel
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].maxSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].accel
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].maxSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].accel
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].maxSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].accel
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].maxSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].accel
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[1].weapons.Array.data[0].timeToFire
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[1].weapons.Array.data[0].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[1].weapons.Array.data[0].positionOffset.y
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[1].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[1].weapons.Array.data[1].timeToFire
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[1].weapons.Array.data[1].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[1].weapons.Array.data[1].positionOffset.y
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[1].weapons.Array.data[1].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[0].timeToFire
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[0].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[1].timeToFire
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[1].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[1].positionOffset.y
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[1].direction.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[1].direction.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[2].timeToFire
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[2].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[2].positionOffset.y
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[2].direction.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[2].direction.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[1].weapons.Array.data[0].timeToFire
+      value: .349999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[1].weapons.Array.data[0].positionOffset.y
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[1].weapons.Array.data[1].positionOffset.y
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[1].weapons.Array.data[0].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[1].weapons.Array.data[1].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[0].timeToFire
+      value: .349999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[0].positionOffset.y
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[0].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[1].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[1].positionOffset.y
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[1].timeToFire
+      value: .349999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[2].timeToFire
+      value: .150000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[2].direction.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[2].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[1].direction.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[1].direction.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[0].direction.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[2].weapons.Array.data[0].direction.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[1].weapons.Array.data[1].timeToFire
+      value: .349999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].livesSprite
+      value: 
+      objectReference: {fileID: 21300104, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].livesSprite
+      value: 
+      objectReference: {fileID: 21300106, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].livesSprite
+      value: 
+      objectReference: {fileID: 21300110, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].livesSprite
+      value: 
+      objectReference: {fileID: 21300108, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].livesSprite
+      value: 
+      objectReference: {fileID: 21300064, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].livesSprite
+      value: 
+      objectReference: {fileID: 21300060, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].livesSprite
+      value: 
+      objectReference: {fileID: 21300062, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].livesSprite
+      value: 
+      objectReference: {fileID: 21300066, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].livesSprite
+      value: 
+      objectReference: {fileID: 21300112, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].livesSprite
+      value: 
+      objectReference: {fileID: 21300116, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].livesSprite
+      value: 
+      objectReference: {fileID: 21300118, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].livesSprite
+      value: 
+      objectReference: {fileID: 21300114, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300046, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300052, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300050, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].health
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].health
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300046, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300052, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300050, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].health
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300046, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300052, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300050, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].health
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300046, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300052, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300050, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].health
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300018, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300020, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300022, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].health
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300018, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300020, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300022, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].health
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300018, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300020, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300022, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].health
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300018, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300020, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300022, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].health
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300042, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300040, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300032, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].health
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300042, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300040, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300032, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300042, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300040, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300032, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].health
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].health
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].damageSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300042, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].damageSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300040, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].damageSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300032, guid: d918407344b2c423f992980835908b34,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .600000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.data[0].weapons.Array.data[1].timeToFire
+      value: .600000024
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.data[0].weapons.Array.data[1].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.data[0].weapons.Array.data[1].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.data[0].weapons.Array.data[1].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[1].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[1].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[1].direction.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[1].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[1].timeToFire
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[2].timeToFire
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[2].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[2].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[2].direction.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[2].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[0].direction.x
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[1].timeToFire
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[1].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[1].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[1].direction.x
+      value: -.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[1].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .150000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .349999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.data[0].weapons.Array.data[1].timeToFire
+      value: .349999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.data[0].weapons.Array.data[1].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.data[0].weapons.Array.data[1].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.data[0].weapons.Array.data[1].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .300000012
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.data[0].weapons.Array.data[0].timeToFire
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.x
+      value: -.200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.data[0].weapons.Array.data[0].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.data[0].weapons.Array.data[1].timeToFire
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.data[0].weapons.Array.data[1].positionOffset.x
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.data[0].weapons.Array.data[1].positionOffset.y
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.data[0].weapons.Array.data[1].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].weaponProgression.Array.data[0].weapons.Array.data[0].direction.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].playOnExplode
+      value: explosion_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[11].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[10].playOnExplode
+      value: explosion_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[9].playOnExplode
+      value: explosion_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[8].playOnExplode
+      value: explosion_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[2].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].playOnExplode
+      value: explosion_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[7].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[6].playOnExplode
+      value: explode_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[5].playOnExplode
+      value: explosion_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[4].playOnExplode
+      value: explosion_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].weaponProgression.Array.data[0].weapons.Array.data[1].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[3].playOnExplode
+      value: explosion_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[2].playOnExplode
+      value: explode_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[1].playOnExplode
+      value: explode_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].weaponProgression.Array.data[0].weapons.Array.data[0].playOnFire
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].playOnHurt
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: availableShips.Array.data[0].playOnExplode
+      value: explosion_med
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 136690}
+  m_IsPrefabParent: 1

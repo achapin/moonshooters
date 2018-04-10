@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: e1beb0c34835241cfb323cdc8046ae54
+timeCreated: 1436718740
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: laser_explosion_tan
+    21300002: laser_explosion_green
+    21300004: laser_explosion_blue
+    21300006: laser_widenbeam_tan
+    21300008: laser_explosion_red
+    21300010: laser_explosion_yellow
+    21300012: laser_halfsplosion_yellow
+    21300014: laser_widen_yellow
+    21300016: laser_halfsplosion_green
+    21300018: laser_halfsplosion_blue
+    21300020: laser_beam_yellow
+    21300022: laser_beam_green
+    21300024: laser_beam_red
+    21300026: laser_beam_blue
+    21300028: laser_beam_tan
+    21300030: laser_widen_green
+    21300032: laser_widen_red
+    21300034: laser_widen_blue
+    21300036: laser_halfsplosion_tan
+    21300038: laser_halfsplosion_red
+    21300040: laser_ring_blue
+    21300042: laser_ring_green
+    21300044: laser_ring_tan
+    21300046: laser_ring_yellow
+    21300048: laser_ring_red
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: laser_explosion_tan
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_explosion_green
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 324
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_explosion_blue
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 323
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_widenbeam_tan
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 412
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_explosion_red
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_explosion_yellow
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 136
+        width: 188
+        height: 188
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_halfsplosion_yellow
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 246
+        width: 172
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_widen_yellow
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 224
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_halfsplosion_green
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 58
+        width: 172
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_halfsplosion_blue
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 168
+        width: 172
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_beam_yellow
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 412
+        width: 38
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_beam_green
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 412
+        width: 39
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_beam_red
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 312
+        width: 37
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_beam_blue
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 312
+        width: 38
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_beam_tan
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 212
+        width: 38
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_widen_green
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 124
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_widen_red
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 24
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_widen_blue
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 68
+        width: 68
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_halfsplosion_tan
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 59
+        width: 172
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_halfsplosion_red
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 58
+        width: 172
+        height: 78
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_ring_blue
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 23
+        width: 93
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_ring_green
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 23
+        width: 92
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_ring_tan
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 23
+        width: 94
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_ring_yellow
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 23
+        width: 93
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laser_ring_red
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 23
+        width: 93
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: game
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

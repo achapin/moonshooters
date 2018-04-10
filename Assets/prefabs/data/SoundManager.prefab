@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &142554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 465856}
+  - component: {fileID: 11409836}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &465856
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11409836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 952b37186c1dc430493499da23acb11b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - soundName: bullet
+    clip: {fileID: 8300000, guid: 90458d029718e45f7a9d609cfa4777f1, type: 3}
+  - soundName: explosion_large
+    clip: {fileID: 8300000, guid: aa8d053c777ff4811b2cbf87488d4e50, type: 3}
+  - soundName: explosion_med
+    clip: {fileID: 8300000, guid: b58859616dc6543b4be7f53db26ed248, type: 3}
+  - soundName: explosion_small
+    clip: {fileID: 8300000, guid: 69e001e86d87f4a7687d480cc1ae5b72, type: 3}
+  - soundName: hit
+    clip: {fileID: 8300000, guid: a99f38f4c314249e7b3b477982a0434c, type: 3}
+  - soundName: click
+    clip: {fileID: 8300000, guid: 2ccc3bf4727714a07b349871b2a010f6, type: 3}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[0].soundName
+      value: bullet
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 90458d029718e45f7a9d609cfa4777f1, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[1].soundName
+      value: explosion_large
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: aa8d053c777ff4811b2cbf87488d4e50, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[2].soundName
+      value: explosion_med
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b58859616dc6543b4be7f53db26ed248, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[3].soundName
+      value: explosion_small
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 69e001e86d87f4a7687d480cc1ae5b72, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[4].soundName
+      value: hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a99f38f4c314249e7b3b477982a0434c, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[5].soundName
+      value: click
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[5].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ccc3bf4727714a07b349871b2a010f6, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[6].soundName
+      value: laser7
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c716238b008247b0b6309b6b58735a3, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[7].soundName
+      value: laser8
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[7].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1b4a9c9b3c5864898acb3425c7160961, type: 3}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[8].soundName
+      value: laser9
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sounds.Array.data[8].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 89e595bf6a907466589cc95ba52a98fb, type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 142554}
+  m_IsPrefabParent: 1
